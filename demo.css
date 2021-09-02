@@ -1,0 +1,124 @@
+:root{
+    --mainBgColor:hsl(0, 0%, 100%);
+    --secondaryBgColor:#555;
+
+    --mainTextColor:#fff;
+    --secondaryTextColor:#333;
+    
+    --primaryBorder:1px solid maroon;
+
+}
+
+
+*{
+    box-sizing:border-box;
+}
+
+html,body{
+margin:0;
+padding:0;
+font-size:16px;
+}
+body{
+    /* height:100vh; */
+    background-image: url("pattern.png");
+    /* background-color: var(--secondaryBgColor); */
+    background-blend-mode: multiply;
+}
+section{
+    margin:1rem;
+}
+
+.main-container{
+    
+    border:1px solid #fff;
+    border-radius:10px;
+    box-shadow:2px 4px 9px #fff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding:2rem 0; */
+    /* background: #999; */
+    padding:1rem
+}
+
+.header{
+    text-align:center;
+    font-size:2.5rem;
+    text-transform: uppercase;
+    font-weight:bolder;
+    color:var(--mainTextColor)
+}
+
+.shopping-list{
+    margin:0;
+    padding:0;
+}
+.list-item{
+    list-style: none;
+    display:grid;
+    grid-template-columns:1fr 90px 80px;
+    grid-auto-rows: auto;
+    padding:0 1rem;
+}
+
+.task-detail{
+    font-size:1.3rem;
+    text-transform: capitalize;
+    color:var(--mainTextColor);
+    border-bottom: var(--primaryBorder);
+}
+.col{
+    padding:.6rem ;
+}
+
+.btn{
+border:0;
+padding:1rem;
+margin-left:.8rem;
+font-size:.9rem;
+border-radius:5px;
+color:var(--mainTextColor);
+transition: .3s;
+
+}
+
+
+.btn-comp{
+    background:rgb(135, 206, 250,.3);
+
+}
+.btn-comp:hover{
+    background:rgb(135, 206, 250,.9);
+}
+
+.line-through{
+    text-decoration: line-through;
+    color:var(--mainTextColor)
+}
+
+.btn-del{
+background: rgba(207, 19, 57,.3);
+transition: .3s;
+}
+.btn-del:hover{
+    background: rgba(207, 19, 57,.8);
+
+    }
+
+.add-items{
+    align-self: center;
+    padding:1rem;
+}
+
+
+#list-input,#list-input:focus{
+    border:none;
+    outline:none;
+    padding:.8rem;
+    font-size: 1rem;
+    border-radius:10px;
+}
+.btn-add{
+    background: darkturquoise;
+}
